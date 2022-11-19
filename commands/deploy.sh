@@ -3,6 +3,8 @@ IMAGE_ORG=$2
 IMAGE_NAME=$3
 IMAGE_VERSION=$4
 
+echo $SERVICE
+
 case "${1}" in 
     relay)
         SERVICE="relay"

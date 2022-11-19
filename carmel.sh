@@ -66,15 +66,14 @@ case "${CMD}" in
         SCRIPT="clean"
         ;;
     deploy)
+        shift $((OPTIND-1))
+        shift
         SCRIPT="deploy"
         ;;
     *)
         echo "Invalid command"; usage   
         ;;
 esac
-
-#shift $((OPTIND-1))
-#shift
 
 echo "****************************** carmel ******************************"
 echo

@@ -13,7 +13,7 @@ provider "linode" {
 
 resource "linode_lke_cluster" "carmel" {
     label       = "carmel"
-    k8s_version = "1.21"
+    k8s_version = "1.23"
     region      = "us-central"
     tags        = ["carmel", "prod"]
 
